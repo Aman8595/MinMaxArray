@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// FIND MIN MAX OF AN ARRAY 
+// METHOD-1:-
+    //     let array=[5,8,7,9,4,6,7,5];
+    // let min = array[0];
+    //  for(let i=1;i<array.length;i++){
+    //     if(array[i]<min){
+    //         min=array[i]
+    //     }
+    //  }
+    //  console.log(min)
+
+    //  let array1=[5,8,7,9,4,6,7,5];
+    // let max = array[0];
+    //  for(let i=1;i<array.length;i++){
+    //     if(array[i]>max){
+    //         max=array[i]
+    //     }
+    //  }
+    //  console.log(max)
+
+//  METHOD-2:- BY SORTING
+
+function MinMax(arr){
+    arr.sort((a, b) => a - b);
+    
+    console.log(arr[0])
+    console.log(arr[arr.length-1])
+}
+
+MinMax([5,8,7,9,4,6,7,5,11])
+
+
+
+
+    </script>
+</body>
+</html>
